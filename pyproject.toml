@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pi-camera-sonos"
+version = "0.1.0"
+description = "Invoke sonos box via image recognition"
+authors = ["Carsten <carsten.frommhold@datadrivers.de>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+soco = "^0.27.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
