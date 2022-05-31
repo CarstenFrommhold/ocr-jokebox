@@ -3,17 +3,20 @@
 
 ## Topics covered
 
-* Control Sonox Box
-* Raspberry Pi Camera Module
-* Deploy @Raspi via PyCharm Deployment (ssh)
+* Control Sonos Box via SoCo
+* Raspberry Pi Camera Module v2
+* Deploy @raspi via PyCharm Deployment (ssh)
 
-## Enable camera
+
+## Raspi camera module
+
+### Enable camera
 
 ```console
 sudo raspi-config
 ```
 
-## Take a picture
+### Take a picture
 
 ```console
 raspistill -v -o pic.jpg
