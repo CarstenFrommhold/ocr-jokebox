@@ -8,8 +8,11 @@ license = "MIT"
 [tool.poetry.dependencies]
 python = "^3.8"
 soco = "^0.27.1"
+rapidfuzz = "^2.0.11"
 
 [tool.poetry.dev-dependencies]
+pytesseract = "0.3.9"
+Pillow = "9.1.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

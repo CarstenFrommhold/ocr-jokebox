@@ -1,17 +1,17 @@
 # Pi-Camera-Sonos
 
-just sandboxing... :-) 
+Just sandboxing with my sonos box. :)
 
 ## Next Steps
 
-* Dev/Prod Dependencies
-* Mnist minimal sample
+* Dev/Prod Dependencies @Raspi
 
-## Topics covered
+## Topics touched
 
 * Control Sonos Box via SoCo
 * Raspberry Pi Camera Module v2
 * Deploy @raspi via PyCharm Deployment (ssh)
+* Tesseract OCR
 
 ## Notes
 
