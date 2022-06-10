@@ -28,7 +28,7 @@ if __name__ == "__main__":
 
     camera = PiCamera()
     camera.resolution = (640, 480)  # optional
-    camera.vflip = True  # rotate 180
+    camera.rotation = 180
 
     take_a_picture(camera)
 

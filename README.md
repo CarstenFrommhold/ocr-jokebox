@@ -1,10 +1,6 @@
-# Pi-Camera-Sonos
+# Music request by message in a bottle
 
-Just sandboxing with my sonos box. :)
-
-## Next Steps
-
-* Dev/Prod Dependencies @Raspi
+Just playing in the sandbox... :) 
 
 ## Topics touched
 
@@ -13,27 +9,22 @@ Just sandboxing with my sonos box. :)
 * Deploy @raspi via PyCharm Deployment (ssh)
 * Tesseract OCR
 
-## Notes
+## Works on my machine, but well...
 
-* Install pyenv on the raspi which is [straightforward](https://github.com/pyenv/pyenv#installation).
-* Install [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv)
-* Install poetry which is also [straightforward](https://python-poetry.org/docs/#installation)
+* Raspian GNU is deliberately kept slim. Big difference between local machine and edge device...
+* Note that poetry build @ raspi can take decades for packages like opencv.
+* Note this [Pi Camera issue](https://github.com/waveform80/picamera/issues/604) with python 3.8.1. Upgrade to 3.8.2 solved it.
 
-## Links
 
+## What to do on raspi
+
+* Enable camera module via ``sudo raspi-config``
+* Install pyenv on raspi which is [straightforward](https://github.com/pyenv/pyenv#installation).
+* Install pyenv-virtualenv is [straightforward](https://github.com/pyenv/pyenv-virtualenv).
+* Install poetry is [straightforward](https://python-poetry.org/docs/#installation).
 * [Install tesseract on Raspi](https://www.macheronte.com/en/how-to-install-tesseract-ocr-on-raspberry-pi/)
+* [Install pillow dependencies](https://stackoverflow.com/questions/44043906/the-headers-or-library-files-could-not-be-found-for-jpeg-installing-pillow-on)
+* Checkout repo and poetry install 
+* cd to run and ``make run``
 
-## Camera Module
-
-### Enable camera
-
-```console
-sudo raspi-config
-```
-
-### Take a picture
-
-```console
-raspistill -v -o pic.jpg
-```
 

@@ -22,7 +22,7 @@ class Handler:
     @staticmethod
     def shot(camera=None):
         camera.capture("pic/pic.jpg")
-        return Image.open("../camera_mock/pic.jpg")
+        return Image.open("pic/pic.jpg")
 
     @staticmethod
     def del_():
@@ -50,6 +50,7 @@ class Handler:
 
     def track_from_img(self, img):
         img_to_str = self.ocr(img)
+        print(f"OCR says {img_to_str}")
 
         if img_to_str == "":
             return "", 0.01
@@ -65,6 +66,7 @@ class Handler:
     def run(self, sonos_box, camera):
         print("Write down what you want to hear...")
         while True:
+            print("Next one?")
             try:
                 os.makedirs("pic")
             except:
@@ -75,6 +77,7 @@ class Handler:
                 if track != self.current_song:
                     self.current_song = track
                     print(f"Playing {track}")
-                    # self.play_track_on_sonos_box(sonos_box, track)
-            self.del_()
+                    self.play_track_on_sonos_box(sonos_box, track)
+                    time.sleep(20)
+            # self.del_()
             time.sleep(1)

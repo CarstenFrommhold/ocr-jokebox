@@ -25,6 +25,7 @@ options_ = ["guns and roses", "coldplay", "daft punkt"]
 print(best_match("Gusn an Roses", options_))
 print(best_match("Cldpla1", options_))
 print(best_match("COLDPLAY", options_))
+print(best_match("", options_))  # 0
 
 print(
     process.extract(

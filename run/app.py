@@ -1,6 +1,9 @@
 from soco import SoCo
 from utils import Handler
-# from picamera import PiCamera
+import os
+
+
+SONOS_IP = '192.168.178.23'
 
 
 class CameraMock:
@@ -13,10 +16,13 @@ handler = Handler()
 
 if __name__ == "__main__":
 
-    # camera = PiCamera()
-    # camera.resolution = (640, 480)
-    # camera.vflip = True
-    camera = CameraMock()
+    if os.uname()[1] == 'raspberrypi':
+        from picamera import PiCamera
+        camera = PiCamera()
+        camera.resolution = (640, 480)
+        camera.rotation = 180
+    else:
+        camera = CameraMock()
 
-    sonos_box = SoCo('192.168.178.23')
+    sonos_box = SoCo(SONOS_IP)
     handler.run(sonos_box, camera)
