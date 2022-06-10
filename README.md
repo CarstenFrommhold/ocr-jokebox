@@ -19,6 +19,10 @@ Just sandboxing with my sonos box. :)
 * Install [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv)
 * Install poetry which is also [straightforward](https://python-poetry.org/docs/#installation)
 
+## Links
+
+* [Install tesseract on Raspi](https://www.macheronte.com/en/how-to-install-tesseract-ocr-on-raspberry-pi/)
+
 ## Camera Module
 
 ### Enable camera

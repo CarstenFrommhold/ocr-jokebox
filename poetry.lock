@@ -53,7 +53,7 @@ python-versions = ">=3.6"
 name = "packaging"
 version = "21.3"
 description = "Core utilities for Python packages"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 
@@ -64,7 +64,7 @@ pyparsing = ">=2.0.2,<3.0.5 || >3.0.5"
 name = "pillow"
 version = "9.1.1"
 description = "Python Imaging Library (Fork)"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7"
 
@@ -76,7 +76,7 @@ tests = ["check-manifest", "coverage", "defusedxml", "markdown2", "olefile", "pa
 name = "pyparsing"
 version = "3.0.9"
 description = "pyparsing module - Classes and methods to define and execute parsing grammars"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6.8"
 
@@ -87,7 +87,7 @@ diagrams = ["railroad-diagrams", "jinja2"]
 name = "pytesseract"
 version = "0.3.9"
 description = "Python-tesseract is a python wrapper for Google's Tesseract-OCR"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7"
 
@@ -168,7 +168,7 @@ python-versions = ">=3.4"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "c8f6c14894b9cfb00a200fb3f3ae0d11c033a6fb7ac98bf7ec12958a0c5fd6cb"
+content-hash = "3e620ab0ad7d1478ae03c86800c5730c4ab76cdfb410d71a07e764c0ee7394fe"
 
 [metadata.files]
 appdirs = [
