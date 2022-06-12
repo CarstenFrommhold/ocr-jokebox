@@ -12,7 +12,7 @@ class Handler:
     def __init__(self):
         self.options = {
             "coldplay": "https://www.mboxdrive.com/Coldplay_X_BTS_-_My_Universe_Offic_(getmp3.pro).mp3",
-            "guns and roses": "https://www.mboxdrive.com/Guns-N-Roses-Sweet-Child-O-Mine-Official-Music-Video_1w7OgIMMRc4.mp3",
+            "guns n roses": "https://www.mboxdrive.com/Guns-N-Roses-Sweet-Child-O-Mine-Official-Music-Video_1w7OgIMMRc4.mp3",
             "queen": "https://www.mboxdrive.com/Queen%20-%20Another%20One%20Bites%20The%20Dust.mp3",
             "daftpunk": "https://www.mboxdrive.com/daft-punk-something-about-us-official-audio.mp3"
         }
@@ -78,6 +78,6 @@ class Handler:
                     self.current_song = track
                     print(f"Playing {track}")
                     self.play_track_on_sonos_box(sonos_box, track)
-                    time.sleep(20)
+                    time.sleep(10)
             # self.del_()
-            time.sleep(1)
+            time.sleep(0.1)

@@ -2,6 +2,8 @@
 
 Just playing in the sandbox... :) 
 
+[![AI Jukebox](sandbox/screenshot.jpg)](https://www.youtube.com/watch?v=Q8ac0MVBQ-M)
+
 ## Topics touched
 
 * Control Sonos Box via SoCo
@@ -25,6 +27,12 @@ Just playing in the sandbox... :)
 * [Install tesseract on Raspi](https://www.macheronte.com/en/how-to-install-tesseract-ocr-on-raspberry-pi/)
 * [Install pillow dependencies](https://stackoverflow.com/questions/44043906/the-headers-or-library-files-could-not-be-found-for-jpeg-installing-pillow-on)
 * Checkout repo and poetry install 
-* cd to run and ``make run``
+* ``cd run`` and ``make run``
+
+## TBC
+
+* Replace tesseract with pre-trained and tuned tf model
+* Search and use or build API für apple music or spotify
+* Use video recognition instead of picture sequence
 
 

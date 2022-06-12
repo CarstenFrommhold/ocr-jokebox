@@ -25,4 +25,5 @@ if __name__ == "__main__":
         camera = CameraMock()
 
     sonos_box = SoCo(SONOS_IP)
+    sonos_box.volume = 50
     handler.run(sonos_box, camera)
